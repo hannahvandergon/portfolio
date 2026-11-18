@@ -1,0 +1,216 @@
+
+body {
+    background-color: #ffffff;
+    color: #6f6962;
+    font-family: 'Montserrat', sans-serif;
+}
+.portfolio-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+.sidebar {
+    background-color: #e5ddce;
+    width: 265px;
+    min-width: 265px;
+    padding: 230px 25px 40px;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    top: -40px;
+    right: -225;
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    transform-origin: center;
+}
+.sidebar h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.sidebar p {
+    font-size: 9px;
+    line-height: 1.7;
+    text-align: center;
+}
+.contact h2{
+    font-size: 26px;
+}
+.contact p{
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.experience h2 {
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+.experience h3 {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 15px;
+}
+.experience p {
+    font-size: 12px;
+    line-height: 1.7;
+    text-align: center;
+}
+.experience ul {
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+.experience li {
+    font-size: 12px;
+    line-height: 1.7;
+}
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+.header {
+    background-color: #faf7f3;
+    min-height: 208px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 35px;
+}
+.name {
+    text-align: center;
+}
+.name h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 75px;
+    font-weight: 300;
+    line-height: 0.9;
+    color: #77716a;
+}
+.major {
+    text-align: center;
+    margin-left: 30px;
+}
+.major p {
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+.content-area {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 45px;
+    padding: 35px 35px;
+    align-items: start;
+}
+.about {
+    text-align: center;
+    padding: 0 10px;
+}
+.about p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #77716a;
+}
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+.project img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+.project {
+    text-align: center;
+}
+.project h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 8px;
+    color: #292929;
+}
+.article-project {
+    grid-column: 1;
+    grid-row: 1;
+    border-top: 1px solid #aaa;
+    padding-top: 12px;
+}
+.game-project {
+    grid-column: 2;
+    grid-row: 1;
+}
+.event-project {
+    grid-column: 2;
+    grid-row: 2;
+    width: 85%;
+    margin-top: -80px;
+    margin-left: -65px;
+    position: relative;
+}
+@media screen and (max-width: 1000px) {
+    .sidebar {
+        width: 220px;
+        min-width: 220px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    .content-area {
+        grid-template-columns: 1fr;
+    }
+    .about p {
+        font-size: 18px;
+    }
+    .major p {
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .portfolio-container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        min-width: 0;
+        padding: 150px 25px 30px;
+    }
+    .logo {
+        font-size: 75px;
+    }
+    .contact {
+        margin-bottom: 30px;
+    }
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 35px 15px;
+    }
+    .major {
+        margin-left: 0;
+    }
+    .content-area {
+        padding: 30px 20px;
+        gap: 35px;
+    }
+    .about p {
+        font-size: 16px;
+    }
+    .projects {
+        grid-template-columns: 1fr 1fr;
+    }
+    .event-project {
+        margin: 0;
+        width: 100%;
+    }
+}
